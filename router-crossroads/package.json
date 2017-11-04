@@ -1,0 +1,9 @@
+{
+  "name": "@repage/router-crossroads",
+  "version": "0.0.1-rc.0",
+  "browser": "./browser.js",
+  "main": "./server.js",
+  "dependencies": {
+    "crossroads": "^0.12.2"
+  }
+}

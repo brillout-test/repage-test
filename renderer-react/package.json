@@ -1,0 +1,11 @@
+{
+  "name": "@repage/renderer-react",
+  "version": "0.0.1-rc.0",
+  "browser": "./browser.js",
+  "main": "./server.js",
+  "dependencies": {
+    "@brillout/html-crust": "^0.0.1",
+    "react": "^16.1.1",
+    "react-dom": "^16.1.1"
+  }
+}

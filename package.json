@@ -1,0 +1,19 @@
+{
+    "private": true,
+    "workspaces": [
+        "core",
+        "build",
+        "browser",
+        "server",
+        "docs",
+        "example",
+        "navigator",
+        "renderer",
+        "renderer-react",
+        "router-crossroads",
+        "router-static"
+    ],
+    "devDependencies": {
+        "lerna": "^2.5.1"
+    }
+}

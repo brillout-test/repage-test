@@ -1,0 +1,9 @@
+{
+  "name": "@repage/core",
+  "version": "0.0.1-rc.0",
+  "main": "./core",
+  "repository": "github:brillout/repage",
+  "dependencies": {
+    "reassert": "^1.0.0"
+  }
+}

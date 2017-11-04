@@ -1,0 +1,10 @@
+{
+  "name": "@repage/navigator",
+  "version": "0.0.1-rc.0",
+  "browser": "./browser.js",
+  "main": "./server.js",
+  "dependencies": {
+    "history": "2.x.x",
+    "reassert": "^1.0.0"
+  }
+}
