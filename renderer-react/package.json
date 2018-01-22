@@ -7,5 +7,9 @@
     "@brillout/html-crust": "^0.0.1",
     "react": "^16.1.1",
     "react-dom": "^16.1.1"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "github:brillout/repage"
 }

@@ -2,5 +2,10 @@
   "name": "@repage/router-static",
   "version": "0.0.1-rc.0",
   "browser": "./browser.js",
-  "main": "./server.js"
+  "main": "./server.js",
+  "dependencies": {},
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "github:brillout/repage"
 }

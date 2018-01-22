@@ -6,5 +6,9 @@
   "dependencies": {
     "history": "2.x.x",
     "reassert": "^1.0.0"
-  }
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": "github:brillout/repage"
 }
