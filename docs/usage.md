@@ -260,8 +260,7 @@ This is the canonical way to render HTML-static pages.
 You can run the code above yourself:
 
 ~~~shell
-sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/rep
-age.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
+sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/repage.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
 ~~~
 ~~~shell
 node ~/tmp/repage/example/build
@@ -291,8 +290,7 @@ hydratePage(repage, LandingPage);
 You can run the code above yourself:
 
 ~~~shell
-sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/rep
-age.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
+sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/repage.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
 ~~~
 ~~~shell
 node ~/tmp/repage/example/browser
@@ -338,8 +336,7 @@ This is the canonical way to render HTML-dynamic pages.
 You can run the code above yourself:
 
 ~~~shell
-sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/rep
-age.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
+sudo npm i -g yarn && mkdir -p ~/tmp && cd ~/tmp && git clone https://github.com/brillout/repage.git && cd repage && npm i && ./node_modules/.bin/lerna bootstrap
 ~~~
 ~~~shell
 node ~/tmp/repage/example/server
