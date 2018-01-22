@@ -75,10 +75,9 @@
 
 
 -->
-[Overview](../../)<br/>
-[Usage](/docs/usage.md)
 
-#### Usage
+
+# Usage
 
 Repage's usage revolves around *page objects*. A page object is a JavaScript object that defines a page.
 
@@ -124,13 +123,15 @@ module.exports = {
 };
 ~~~
 
-Note that we also set `htmlIsStatic: true` to tell Repage that the page is HTML-static. Because the page is HTML-static it will be included in the output of `getStaticPages()`.
+Note that we also set `htmlIsStatic: true` to tell Repage that the page is HTML-static.
+Because the page is declared as HTML-static,
+it will be included in the output of `getStaticPages()`.
 
-We don't always have to implement `renderToDom` and `renderToHtml` directly ourselves.
+We don't have to implement `renderToDom` and `renderToHtml` ourselves.
 Instead, we can use a plugin that implements them for us.
 For example,
 by using the `@repage/renderer-react` plugin,
-the page only needs to provide a React component to the page object's `view` property
+the page only needs to provide a React component to the page object
 and the plugin implements the two render functions `renderToHtml` and `renderToDom`.
 Let's look at a page defined like that.
 
@@ -171,7 +172,7 @@ module.exports = {
 Note how we add the `@repage/renderer-react` plugin by adding it to the page object's `plugins` array.
 We can also add plugins globally as we will see in the next code snippet.
 
-Now that we have defined some page objects, let's add them to a repage object we create.
+Now that we have defined some page objects, let's create a repage object and add our page objects to it.
 
 ~~~js
 // /example/common.js
@@ -204,7 +205,7 @@ repage.addPages([
 module.exports = repage;
 ~~~
 
-We have now created a repage object and added pages and plugins to it.
+We have now created a repage object and added page objects and plugins to it.
 
 Let's now render our pages.
 
@@ -250,7 +251,9 @@ Running the code above prints
 ]
 ~~~
 
-`getStaticPages(repage)` can for example be used in your build process to add `.html` files to the static assets directory where each `.html` file is generated from a HTML-static page. (HTML-static pages can be rendered to HTML on build-time.)
+`getStaticPages(repage)` can be used in a build process to add HTML files to the static assets directory.
+Each HTML file is generated from a HTML-static page.
+(HTML-static pages can be rendered to HTML on build-time.)
 This is the canonical way to render HTML-static pages.
 
 You can run the code above yourself:
@@ -322,7 +325,7 @@ prints
 }
 ~~~
 
-`getPageHtml(repgae, uri)` can be called upon HTTP requests the server receives in order to return the HTML of the page matching the request's `uri`.
+`getPageHtml(repgae, uri)` can be called upon HTTP requests in order to return the HTML of the page matching the request's `uri`.
 This is the canonical way to render HTML-dynamic pages.
 
 You can run the code above yourself:
@@ -409,7 +412,7 @@ Finally, the plugin renders the React element.
 
 
 If you are left with question(s), feel free to open a GitHub issue.
-Also note that every package is <200 LOC, so reading the the source code could be an option.
+Also note that every package is <200 LOC, so reading the source code could be a viable option.
 
 <!---
 
